@@ -15,4 +15,5 @@ aws eks update-kubeconfig --region eu-central-1 --name bombardier
 resources.txt
 
 ####RUN####
+
 ./run_all_kuber.sh
