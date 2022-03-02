@@ -27,10 +27,10 @@ module "eks" {
     suspended_processes        = ["AZRebalance"]
     spot_price                 = "0.04"
 
-    asg_min_size            = 20
-    asg_max_size            = 20
-    asg_desired_capacity    = 20
-    spot_instance_pools     = 20
+    asg_min_size            = 10
+    asg_max_size            = 10
+    asg_desired_capacity    = 10
+    spot_instance_pools     = 10
     on_demand_base_capacity = 0
 
     kubelet_extra_args = "--node-labels=node.kubernetes.io/lifecycle=`curl -s http://169.254.169.254/latest/meta-data/instance-life-cycle`"
