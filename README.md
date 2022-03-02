@@ -17,3 +17,7 @@ resources.txt
 ####RUN####
 
 ./run_all_kuber.sh
+
+###DELETE####
+
+./delete_all_kuber.sh
