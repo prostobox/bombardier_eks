@@ -3,10 +3,6 @@ terraform {
     aws = {
       version = "~> 3.72.0"
     }
-    kubectl = {
-      source  = "gavinbunney/kubectl"
-      version = ">= 1.7.0"
-    }
   }
 }
 

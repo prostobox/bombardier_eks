@@ -34,6 +34,13 @@ module "eks" {
     on_demand_base_capacity = 0
 
     kubelet_extra_args = "--node-labels=node.kubernetes.io/lifecycle=`curl -s http://169.254.169.254/latest/meta-data/instance-life-cycle`"
+    tags = [
+      {
+        "key"                 = "AutoOff"
+        "value"               = "True"
+        "propagate_at_launch" = "true"
+      },
+    ]
     }
   ]
 }
